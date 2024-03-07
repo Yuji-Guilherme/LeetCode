@@ -1,2 +1,2 @@
-# LeetCode
-Resoluções dos exercícios LeetCode
+# Resoluções dos exercícios LeetCode
+Em c# e javascript/typescript
