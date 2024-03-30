@@ -13,3 +13,17 @@ var reverseList = function(head) {
 
     return prv;
 };
+
+//Por Recursão
+
+var reverseList = function(head) {
+    return Reverse(null, head);      
+};
+
+function Reverse(prev, current) {
+ if (current == null) return prev;
+
+ var newHead = Reverse(current, current.next);
+ current.next = prev;
+ return newHead;
+};

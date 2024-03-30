@@ -15,3 +15,21 @@ public class Solution {
         return prv;
     }
 }
+
+//Por recursão
+
+public class Solution {
+    public ListNode ReverseList(ListNode head) {
+        return Reverse(null, head);
+            
+        static ListNode Reverse(ListNode prev, ListNode current)
+        {
+            if (current == null)
+                return prev;
+
+            var newHead = Reverse(current, current.next);
+            current.next = prev;
+            return newHead;
+        }
+    }
+}
